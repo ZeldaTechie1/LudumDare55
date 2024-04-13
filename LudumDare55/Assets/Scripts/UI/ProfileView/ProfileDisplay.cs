@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ProfileDisplay : MonoBehaviour
+public class ProfileDisplay : MonoBehaviour, IPointerClickHandler
 {
+    [SerializeField]GameObject ProfileViewCanvas;
     [SerializeField]ProfileCreator _profileCreator;
     [SerializeField]Image _profilePicture;
     [SerializeField]TextMeshProUGUI _nameText;
@@ -17,6 +19,7 @@ public class ProfileDisplay : MonoBehaviour
     void Start()
     {
         MakeNewProfileAndUpdate();
+        ProfileViewCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,5 +45,10 @@ public class ProfileDisplay : MonoBehaviour
         _ageText.text = $"Age: {currentProfile.Age}";
         _backgroundText.text = $"Background:\n{currentProfile.Background}";
         _otherText.text = $"Other:\n{currentProfile.Other}";
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        ProfileViewCanvas.SetActive(!ProfileViewCanvas.gameObject.activeSelf);
     }
 }
