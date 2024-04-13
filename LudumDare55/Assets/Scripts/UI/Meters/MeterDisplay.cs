@@ -15,7 +15,8 @@ public class MeterDisplay : MonoBehaviour
 
     private void Start()
     {
-        _barImage = GetComponent<Image>();  
+        _barImage = GetComponent<Image>(); 
+        UpdateDisplay();
     }
 
     void UpdateDisplay()
