@@ -151,10 +151,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 252.66544, y: -230.45914}
-  m_SizeDelta: {x: 456.2509, y: 126.1015}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3.031128, y: -137.15582}
+  m_SizeDelta: {x: -43.01779, y: -323.21478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &105104389
 MonoBehaviour:
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -287,10 +287,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 338.24802, y: 215.11}
-  m_SizeDelta: {x: 285.0788, y: 34.3832}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 32.19998, y: 155.35864}
+  m_SizeDelta: {x: -178.0726, y: -383.4275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126094897
 MonoBehaviour:
@@ -339,8 +339,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 143762680}
   - component: {fileID: 143762679}
   m_Layer: 5
-  m_Name: Description
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,10 +423,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 252.66547, y: -25.363}
-  m_SizeDelta: {x: 456.2509, y: 284.09}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3.031128, y: -2.5109863}
+  m_SizeDelta: {x: -43.01779, y: -219.4959}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143762679
 MonoBehaviour:
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Description:'
+  m_text: 'Background:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -475,8 +475,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -559,10 +559,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 338.24802, y: 249.4884}
-  m_SizeDelta: {x: 285.0788, y: 34.3832}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 32.2, y: 177.92804}
+  m_SizeDelta: {x: -178.0726, y: -383.4275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339239964
 MonoBehaviour:
@@ -611,8 +611,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -695,10 +695,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 338.24802, y: 146.35}
-  m_SizeDelta: {x: 285.0788, y: 34.3832}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 32.19998, y: 110.21805}
+  m_SizeDelta: {x: -178.0726, y: -383.4275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373222743
 MonoBehaviour:
@@ -747,8 +747,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1008,10 +1008,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 338.24802, y: 180.73}
-  m_SizeDelta: {x: 285.0788, y: 34.3832}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 32.19998, y: 132.78835}
+  m_SizeDelta: {x: -178.0726, y: -383.4275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536846865
 MonoBehaviour:
@@ -1060,8 +1060,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 16.1
+  m_fontSizeBase: 16.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1255,8 +1255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 251.16351, y: -311.6825}
-  m_SizeDelta: {x: 502.32703, y: 623.365}
+  m_AnchoredPosition: {x: 201.26999, y: -202.5404}
+  m_SizeDelta: {x: 402.54, y: 405.0808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804087100
 MonoBehaviour:
@@ -1601,10 +1601,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 804087099}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 101.82605, y: 192}
-  m_SizeDelta: {x: 154.243, y: 150}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 67.04, y: -56.286}
+  m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277868979
 MonoBehaviour:
@@ -1901,7 +1901,7 @@ MonoBehaviour:
   _raceText: {fileID: 126094897}
   _occupationText: {fileID: 536846865}
   _ageText: {fileID: 373222743}
-  _descriptionText: {fileID: 143762679}
+  _backgroundText: {fileID: 143762679}
   _otherText: {fileID: 105104389}
 --- !u!1 &1851067233
 GameObject:

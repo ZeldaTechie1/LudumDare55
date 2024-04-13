@@ -22,6 +22,6 @@ public struct Profile
     public Race Race;
     public Occupation Occupation;
     public int Age;
-    public string Description;
+    public string Background;
     public string Other;
 }

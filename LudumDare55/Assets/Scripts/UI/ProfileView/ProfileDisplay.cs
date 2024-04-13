@@ -10,7 +10,7 @@ public class ProfileDisplay : MonoBehaviour
     [SerializeField]TextMeshProUGUI _raceText;
     [SerializeField]TextMeshProUGUI _occupationText;
     [SerializeField]TextMeshProUGUI _ageText;
-    [SerializeField]TextMeshProUGUI _descriptionText;
+    [SerializeField]TextMeshProUGUI _backgroundText;
     [SerializeField]TextMeshProUGUI _otherText;
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class ProfileDisplay : MonoBehaviour
         _raceText.text = $"Race: {currentProfile.Race}";
         _occupationText.text = $"Occupation: {currentProfile.Occupation}";
         _ageText.text = $"Age: {currentProfile.Age}";
-        _descriptionText.text = $"Description:\n{currentProfile.Description}";
+        _backgroundText.text = $"Background:\n{currentProfile.Background}";
         _otherText.text = $"Other:\n{currentProfile.Other}";
     }
 }
