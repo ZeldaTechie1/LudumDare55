@@ -16,14 +16,20 @@ public class ProfileDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _profileCreator.CreateNewProfile();
-        PopulateDisplay();
+        MakeNewProfileAndUpdate();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+            MakeNewProfileAndUpdate();
+    }
+
+    void MakeNewProfileAndUpdate()
+    {
+        _profileCreator.CreateNewProfile();
+        PopulateDisplay();
     }
 
     void PopulateDisplay()
