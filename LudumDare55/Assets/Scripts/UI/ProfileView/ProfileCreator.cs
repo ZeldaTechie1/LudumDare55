@@ -10,6 +10,7 @@ using Random = UnityEngine.Random;
 public class ProfileCreator
 {
     public Profile CurrentProfile { get; private set; }
+    [SerializeField]List<Sprite> _profileImages;
     List<string> _firstNames = new List<string>() 
     {
         "America",
@@ -108,6 +109,7 @@ public class ProfileCreator
         Profile newProfile = new Profile
         {
             //get random photo
+            ProfilePicture = _profileImages[Random.Range(0, _profileImages.Count())],
             Name = $"{_firstNames[Random.Range(0, _firstNames.Count)]} {_lastNames[Random.Range(0, _lastNames.Count)]}",
             Race = (Race)Random.Range(0, Enum.GetNames(typeof(Race)).Length),
             Age = Random.Range(18, 95),
