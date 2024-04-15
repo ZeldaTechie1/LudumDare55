@@ -2460,6 +2460,203 @@ Transform:
   - {fileID: 691823206}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1701017746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701017748}
+  - component: {fileID: 1701017747}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1701017747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701017746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c28fccebde21054d8b6bc2dca37020a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _qualificationQuestionArray:
+  - questionString: Are you allergic to wheat, corn, or soy byproducts?
+    justiceVal: -3
+    insanityVal: 1
+  - questionString: Have you ever appeared on public television?
+    justiceVal: 5
+    insanityVal: 8
+  - questionString: Is that your real hair?
+    justiceVal: 0
+    insanityVal: 10
+  - questionString: Have you ever ridden a tandem bicycle?
+    justiceVal: 5
+    insanityVal: 5
+  - questionString: Are you tone-deaf?
+    justiceVal: -5
+    insanityVal: 3
+  - questionString: Have you ever used a cheat code in a video game?
+    justiceVal: -10
+    insanityVal: -10
+  - questionString: Can you hold your breath underwater for a minute?
+    justiceVal: 7
+    insanityVal: 3
+  - questionString: Yes or no?
+    justiceVal: -10
+    insanityVal: -10
+  - questionString: Are you looking at me funny?
+    justiceVal: -9
+    insanityVal: 7
+  - questionString: Do you have recurring nightmares?
+    justiceVal: -4
+    insanityVal: 6
+  - questionString: Are you a sovreign citizen?
+    justiceVal: -8
+    insanityVal: 10
+  - questionString: Have you ever killed a houseplant?
+    justiceVal: -3
+    insanityVal: 2
+  - questionString: Are there voices in your head?
+    justiceVal: -7
+    insanityVal: 7
+  - questionString: Can I have your autograph?
+    justiceVal: 5
+    insanityVal: 5
+  - questionString: Do you have an alibi for the night of April 14, 1865?
+    justiceVal: 6
+    insanityVal: 4
+  - questionString: Do you jaywalk?
+    justiceVal: -3
+    insanityVal: 7
+  - questionString: Is your favorite color orange?
+    justiceVal: 1
+    insanityVal: -6
+  - questionString: Could you defeat a small horse in unarmed combat?
+    justiceVal: 9
+    insanityVal: 9
+  - questionString: Do you have a driver's license?
+    justiceVal: 5
+    insanityVal: 4
+  - questionString: Do you procrastinate?
+    justiceVal: -6
+    insanityVal: 3
+  - questionString: Do you like starting fires?
+    justiceVal: -10
+    insanityVal: 8
+  - questionString: Are there more than five unplayed games in your Steam library?
+    justiceVal: -7
+    insanityVal: 5
+  - questionString: Do you take the pickles off your burger?
+    justiceVal: -2
+    insanityVal: -4
+  - questionString: Do you like banjo music?
+    justiceVal: 5
+    insanityVal: 5
+  - questionString: Is that your real name?
+    justiceVal: 7
+    insanityVal: 10
+  - questionString: Have you ever gotten your hand stuck in a jar?
+    justiceVal: -5
+    insanityVal: 5
+  - questionString: Do you write fanfiction?
+    justiceVal: -10
+    insanityVal: 10
+  - questionString: Have you ever committed online piracy?
+    justiceVal: -4
+    insanityVal: -5
+  - questionString: Have you ever committed maritime piracy?
+    justiceVal: -10
+    insanityVal: 10
+  - questionString: Do typos bohter you?
+    justiceVal: 5
+    insanityVal: -9
+  - questionString: Do you have a criminal history involving trampolines?
+    justiceVal: -3
+    insanityVal: 8
+  - questionString: Can you do twenty pushups?
+    justiceVal: 5
+    insanityVal: 0
+  - questionString: Do you own a phonograph?
+    justiceVal: 0
+    insanityVal: 8
+  - questionString: Are all your friends imaginary?
+    justiceVal: -5
+    insanityVal: 7
+  - questionString: Do you say "bless you" after someone sneezes?
+    justiceVal: 7
+    insanityVal: 0
+  - questionString: How many fingers am I holding up?
+    justiceVal: 0
+    insanityVal: -3
+  - questionString: Do you own more than two cats?
+    justiceVal: 6
+    insanityVal: 6
+  - questionString: Can you recite the entire Bee Movie script by memory?
+    justiceVal: 5
+    insanityVal: 8
+  - questionString: Do you swear to be an impartial jury member?
+    justiceVal: 10
+    insanityVal: -10
+  - questionString: Do you want to be here right now?
+    justiceVal: 5
+    insanityVal: 2
+  - questionString: Do I look good today?
+    justiceVal: 10
+    insanityVal: 4
+  - questionString: Can you name a woman?
+    justiceVal: -8
+    insanityVal: 3
+  - questionString: Has it been a week since you last thought about the Roman Empire?
+    justiceVal: 3
+    insanityVal: 3
+  - questionString: When asked questions do you tend to answer them?
+    justiceVal: 4
+    insanityVal: -5
+  - questionString: Did you get tucked in bed last night?
+    justiceVal: 5
+    insanityVal: 1
+  - questionString: Do you have commitment issues?
+    justiceVal: -8
+    insanityVal: 5
+  - questionString: Do you read fanfiction?
+    justiceVal: -7
+    insanityVal: 7
+  - questionString: Can you juggle without looking?
+    justiceVal: 2
+    insanityVal: 5
+  - questionString: Do you solemnly swear to tell the truth, the whole truth, and
+      nothing but the truth, and you will keep secret all of the proceedings of the
+      grand jury conducted in your presence, so help you God?
+    justiceVal: 9
+    insanityVal: -5
+  - questionString: Do you steal for fun?
+    justiceVal: -6
+    insanityVal: 5
+--- !u!4 &1701017748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701017746}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1810410290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,3 +3046,4 @@ SceneRoots:
   - {fileID: 1553787086}
   - {fileID: 812280375}
   - {fileID: 1851067236}
+  - {fileID: 1701017748}
