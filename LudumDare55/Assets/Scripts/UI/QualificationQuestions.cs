@@ -39,9 +39,6 @@ public class QualificationQuestions : MonoBehaviour
 
     List<QualificationQuestion> _remainingQuestions;
     QualificationQuestion _currentQuestion;
-    bool _isContemptOfCourt;
-    bool _isFitForJuryDuty;
-    bool _isExcused;
     int _questionsAsked;
     int _maxQuestionsToAsk = 10;
 

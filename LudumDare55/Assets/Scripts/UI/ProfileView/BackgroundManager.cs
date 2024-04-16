@@ -18,12 +18,6 @@ public class BackgroundManager : MonoBehaviour
     void UpdatePortraits(int profileIndex)
     {
         ResetPortraits();
-        StartCoroutine(StupidLoadingFix(profileIndex));
-    }
-
-    IEnumerator StupidLoadingFix(int profileIndex)
-    {
-        yield return new WaitForSeconds(1f);
         _portraits[profileIndex].transform.parent.GetComponent<Image>().color = Color.white;
     }
 
