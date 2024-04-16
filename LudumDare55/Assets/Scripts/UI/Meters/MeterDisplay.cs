@@ -10,7 +10,7 @@ public class MeterDisplay : MonoBehaviour
     public static Action<MeterType> BarHitAboveMax;
     [SerializeField]MeterType _currentMeterType;
     [SerializeField]float _maxPoints;
-    [SerializeField]float _currentPoints;
+    [SerializeField]public float _currentPoints;
     Image _barImage;
 
     private void Start()

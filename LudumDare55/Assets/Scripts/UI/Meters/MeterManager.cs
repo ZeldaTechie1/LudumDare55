@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,17 @@ public class MeterManager : MonoBehaviour
 {
     [SerializeField]List<MeterDisplay> _meters;
 
+    private void Start()
+    {
+        QualificationQuestions.QuestionAnsweredEvent += OnQuestionAnswered;
+    }
+
+    private void OnQuestionAnswered(int justiceValue, int insanityValue)
+    {
+        UpdateMeter(MeterType.JusticeMeter, justiceValue);
+        UpdateMeter(MeterType.CrazinessMeter, insanityValue);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -24,7 +36,7 @@ public class MeterManager : MonoBehaviour
             UpdateMeter(MeterType.CrazinessMeter, -1f);
     }
 
-    public void UpdateMeter(MeterType meterType, float amountToAdjust)
+    void UpdateMeter(MeterType meterType, float amountToAdjust)
     {
         if(amountToAdjust > 0)
             _meters[(int)meterType].AddPoints(amountToAdjust);
