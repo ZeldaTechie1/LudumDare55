@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 283668696}
   - component: {fileID: 283668695}
   - component: {fileID: 283668694}
+  - component: {fileID: 283668698}
   m_Layer: 5
   m_Name: EndCanvas
   m_TagString: Untagged
@@ -555,6 +556,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &283668698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283668693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092aa599376e8c641a977a8e3a7cd0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _endingScreens:
+  - {fileID: 1776179277}
+  - {fileID: 1433181255}
+  - {fileID: 1788120206}
+  - {fileID: 647376924}
 --- !u!1 &324565524
 GameObject:
   m_ObjectHideFlags: 0

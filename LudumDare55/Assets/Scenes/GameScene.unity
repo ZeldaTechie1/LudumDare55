@@ -4190,7 +4190,7 @@ MonoBehaviour:
     justiceVal: -6
     insanityVal: 5
   _questionText: {fileID: 1388850392}
-  _charactersPerMinute: 900
+  _charactersPerMinute: 1500
   _yesButton: {fileID: 1946883615}
   _noButton: {fileID: 48279849}
   _meters:
