@@ -43,4 +43,9 @@ public class MeterManager : MonoBehaviour
         else
             _meters[(int)meterType].RemovePoints(-amountToAdjust);
     }
+
+    private void OnDestroy()
+    {
+        QualificationQuestions.QuestionAnsweredEvent -= OnQuestionAnswered;
+    }
 }

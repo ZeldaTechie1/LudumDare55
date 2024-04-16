@@ -4035,6 +4035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c28fccebde21054d8b6bc2dca37020a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _resultsHolder: {fileID: 0}
+  ResultsHolderPrefab: {fileID: 8815485550339613056, guid: fded638b0fa942b418d8a66b95cc4a71, type: 3}
   _sceneChanger: {fileID: 1701017749}
   _qualificationQuestionArray:
   - questionString: Are you allergic to wheat, corn, or soy byproducts?

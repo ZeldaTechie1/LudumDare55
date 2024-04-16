@@ -11,6 +11,8 @@ using Random = UnityEngine.Random;
 public class QualificationQuestions : MonoBehaviour
 {
     public static Action<int, int> QuestionAnsweredEvent;
+    public ResultsHolder _resultsHolder;
+    public GameObject ResultsHolderPrefab;
 
     [System.Serializable]
     public struct QualificationQuestion
@@ -45,10 +47,14 @@ public class QualificationQuestions : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(this);
+        _resultsHolder = FindAnyObjectByType<ResultsHolder>();
+        if(!_resultsHolder)
+        {
+            _resultsHolder = Instantiate(ResultsHolderPrefab).GetComponent<ResultsHolder>();
+            DontDestroyOnLoad(_resultsHolder.gameObject);
+        }
+            
         _remainingQuestions = new List<QualificationQuestion>(_qualificationQuestionArray);
-        EndScreenManager.EndScreenEvent += GetWinConditionIndex;
-        SceneManager.sceneLoaded += ResetQuestions;
         _yesButton.interactable = false;
         _noButton.interactable = false;
         AskQuestion();
@@ -102,27 +108,16 @@ public class QualificationQuestions : MonoBehaviour
         return -1;
     }
 
-    void ResetQuestions(Scene sceneLoaded, LoadSceneMode mode)
-    {
-        if (sceneLoaded.name != "GameScene")
-            return;
-
-        _remainingQuestions = new List<QualificationQuestion>(_qualificationQuestionArray);
-        _isContemptOfCourt = false;
-        _isFitForJuryDuty = false;
-
-    }
-
     IEnumerator VerifyWinCondition()
     {
         yield return new WaitForSeconds(2);
 
-        if (_questionsAsked > _maxQuestionsToAsk)
+        if (_questionsAsked > _maxQuestionsToAsk || _meters[0]._currentPoints == 0 || _meters[1]._currentPoints == 0 || _meters[0]._currentPoints == 100 || _meters[1]._currentPoints == 100)
+        {
+            _resultsHolder.winIndex = GetWinConditionIndex();
             _sceneChanger.LoadEndScene();
-        else if (_meters[0]._currentPoints == 0 || _meters[1]._currentPoints == 0 || _meters[0]._currentPoints == 100 || _meters[1]._currentPoints == 100)
-            _sceneChanger.LoadEndScene();
+        }
         else
             AskQuestion();
-
     }
 }
