@@ -4161,8 +4161,8 @@ MonoBehaviour:
     justiceVal: 10
     insanityVal: 4
   - questionString: Can you name a woman?
-    justiceVal: -8
-    insanityVal: 3
+    justiceVal: 8
+    insanityVal: -3
   - questionString: Has it been a week since you last thought about the Roman Empire?
     justiceVal: 3
     insanityVal: 3
